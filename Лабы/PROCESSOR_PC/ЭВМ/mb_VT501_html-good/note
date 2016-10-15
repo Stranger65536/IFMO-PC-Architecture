@@ -1,0 +1,67 @@
+this.dataXML=new XML();
+this.dataXML.ignoreWhite=true;
+function icf(item){
+	return "icon_"+item.data.icon;
+}
+_root.mc_processors.iconFunction=icf;
+_root.mc_memory.iconFunction=icf;
+_root.mc_video.iconFunction=icf;
+_root.mc_keyboard.iconFunction=icf;
+
+//parsing loaded xml
+this.dataXML.onLoad=function(){
+	var i;
+	var j;
+	var data=this.firstChild;
+	
+	for (i=data.childNodes.length-1;i>=0;i--){
+		switch (data.childNodes[i].nodeName){
+			case "processors":
+				_root.processors=data.childNodes[i];
+				len=_root.processors.childNodes.length;
+				for (j=0;j<len;j++){
+					_root.mc_processors.addItem(_root.processors.childNodes[j].attributes.label,_root.processors.childNodes[j].attributes);
+				}			
+			break;
+			
+			case "memory":
+				_root.memory=data.childNodes[i];
+				len=_root.memory.childNodes.length;
+				for (j=0;j<len;j++){
+					_root.mc_memory.addItem(_root.memory.childNodes[j].attributes.label,_root.memory.childNodes[j].attributes);
+				}
+			break;
+			
+			case "video":
+				_root.video=data.childNodes[i];
+				len=_root.video.childNodes.length;
+				for (j=0;j<len;j++){
+					_root.mc_video.addItem(_root.video.childNodes[j].attributes.label,_root.video.childNodes[j].attributes);
+				}
+			break;
+			
+			case "keyboard":
+				_root.keyboard=data.childNodes[i];
+				len=_root.keyboard.childNodes.length;
+				for (j=0;j<len;j++){
+					_root.mc_keyboard.addItem(_root.keyboard.childNodes[j].attributes.label,_root.keyboard.childNodes[j].attributes);
+				}
+			break;
+			
+			case "areas":
+				_root.areas=data.childNodes[i];
+				break;
+			case "jumpers":
+				_root.jumpers=data.childNodes[i];
+				break;
+			default:
+				trace("Wrong XML");
+		}
+	}
+
+	_root.createEmptyMovieClip("libfile",1000);
+	libfile.loadMovie(data.attributes.libfile);
+	_root.workArea.contentPath=data.attributes.file;
+	_root.title.text=data.attributes.title;
+}
+this.dataXML.load("mb.xml");

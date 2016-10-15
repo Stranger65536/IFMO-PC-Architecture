@@ -1,0 +1,1 @@
+copy /y config.sys + autoexec.bat sysload.txt

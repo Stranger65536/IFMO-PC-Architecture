@@ -1,0 +1,88 @@
+<mb title="Lucky Star 5TX2B" file="asusp2_99.swf" libfile="imglib.swf" help="35676.htm">
+  <processors>
+    <processor id="p01" label="AMD 5k 86" icon="amd" image="amd5k86"  type="proc" volt="3.3" range="0.1"/>
+    <processor id="p02" label="Pentium I MMX" icon="intel" image="p1mmx"  type="proc" volt="2.9" range="0.3"/>
+	<processor id="p03" label="IBM" icon="proc" image="ibm"  type="proc" volt="3.3" range="0.2"/>
+	<processor id="p04" label="Cyrix MI" icon="proc" image="cyrix"  type="proc" volt="3.3" range="0.2"/>
+  </processors>
+  <memory>
+    <module id="m01" label="Kingston 32 Mb SIMM" icon="mem"   image="memory" type="simm" size="32"/>
+    <module id="m02" label="NoName 64 Mb DIMM"   icon="mem"   image="dimm" type="dimm" size="64"/>
+  </memory>
+  <video>
+    <card id="v01" label="Unknown Isa Video Card" icon="mem" image="video" type="isa"/>
+    <card id="v02" label="Unknown China AGP" icon="mem" image="video" type="agp"/>
+    <card id="v03" label="ATI Radeon 9800"   icon="mem" image="video" type="agp8x"/>
+  </video>
+  <jumpers>
+ 	<jumper id="j01" image="j1" area="j1_area"/>
+  	<jumper id="j02" image="j2" area="j2_area"/>
+
+ 	<jumper id="jp15_12" image="jp15_12" area="jp15_12_area"/>
+ 	<jumper id="jp15_34" image="jp15_34" area="jp15_34_area"/>
+ 	<jumper id="jp15_56" image="jp15_56" area="jp15_56_area"/>
+ 	<jumper id="jp15_78" image="jp15_78" area="jp15_78_area"/>
+
+
+    <jumperset>
+  	  <jumper id="jp12_12" image="jp12_12" area="jp12_12_area"/>
+  	  <jumper id="jp12_23" image="jp12_23" area="jp12_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jp13_12" image="jp13_12" area="jp13_12_area"/>
+  	  <jumper id="jp13_23" image="jp13_23" area="jp13_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jp14_12" image="jp14_12" area="jp14_12_area"/>
+  	  <jumper id="jp14_23" image="jp14_23" area="jp14_23_area"/>
+    </jumperset>
+
+
+    <jumperset>
+  	  <jumper id="jp17_12" image="jp17_12" area="jp17_12_area"/>
+  	  <jumper id="jp17_23" image="jp17_23" area="jp17_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jp9_12" image="jp9_12" area="jp9_12_area"/>
+  	  <jumper id="jp9_23" image="jp9_23" area="jp9_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jp8_12" image="jp8_12" area="jp8_12_area"/>
+  	  <jumper id="jp8_23" image="jp8_23" area="jp8_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jp7_12" image="jp7_12" area="jp7_12_area"/>
+  	  <jumper id="jp7_23" image="jp7_23" area="jp7_23_area"/>
+    </jumperset>
+
+  </jumpers>
+  <areas>
+    <area description="Processor socket" name="proc" type="proc">
+      <link id="p01" image="img_p01"/>
+      <link id="p02" image="img_p02"/>
+      <link id="p03" image="img_p03"/>
+      <link id="p04" image="img_p04"/>
+    </area>
+    <area description="Simm socket 1" name="simm1" type="simm">
+      <link id="m01" image="img_simm1"/>
+    </area>
+    <area description="Simm socket 2" name="simm2" type="simm">
+      <link id="m01" image="img_simm2"/>
+    </area>
+    <area description="Dimm socket" name="dimm1" type="dimm">
+      <link id="m02" image="img_dimm1"/>
+    </area>
+    <area description="Dimm socket" name="dimm2" type="dimm">
+      <link id="m02" image="img_dimm2"/>
+    </area>
+    <area description="Isa slot 1" name="isa1" type="isa">
+      <link id="v01" image="img_v01"/>
+    </area>
+    <area description="North bridge" name="north" type="hint"/>
+    <area description="South bridge" name="south" type="hint"/>
+    <area description="Primary IDE" name="priIde" type="hint"/>
+    <area description="Secondary IDE" name="secIde" type="hint"/>
+    <area description="Floppy disk" name="fdc" type="hint"/>
+
+  </areas>
+</mb>

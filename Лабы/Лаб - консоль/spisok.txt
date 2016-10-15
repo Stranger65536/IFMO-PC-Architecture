@@ -1,0 +1,8 @@
+autoexec.bat
+config.sys
+DELETED.txt
+spisok.txt
+sysload.txt
+task13.bat
+task23.bat
+task3.bat

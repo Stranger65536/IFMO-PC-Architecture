@@ -1,0 +1,106 @@
+<mb title="Asus P5A-B" file="asusp2_99.swf" libfile="imglib.swf" help="p5ab-107.pdf">
+  <processors>
+    <processor id="p01" label="AMD 5k 90" icon="amd" image="amd5k86"  type="proc" volt="3.3" range="0.1">
+        75;90;90;-;
+        +;+;+;75;
+        +;+;+;75;
+        75;90;90;-
+    </processor>
+    <processor id="p02" label="Intel Pentium 55C" icon="intel" image="p1mmx"  type="proc" volt="2.9" range="0.3">
+        150;166;180;200;
+        125;133;150;166;
+        125;133;150;166;
+        150;166;180;200
+	</processor>
+	<processor id="p03" label="IBM" icon="proc" image="ibm"  type="proc" volt="3.3" range="0.2">
+        150;-;-;-;
+        100;-;120;133;
+        100;110;120;133;
+        150;-;-;-
+	</processor>
+	<processor id="p04" label="Cyrix MI" icon="proc" image="cyrix"  type="proc" volt="3.3" range="0.2">
+        150;150;180;-;
+        100;110;120;133;
+        50;50;60;66;
+        -;-;-;-
+	</processor>
+  </processors>
+  <memory>
+    <module id="m01" label="Kingston 128 Mb SIMM" icon="mem"   image="memory" type="simm" size="128"/>
+    <module id="m02" label="NoName 256 Mb DIMM"   icon="mem"   image="memory" type="dimm" size="256"/>
+  </memory>
+  <video>
+    <card id="v01" label="Unknown Isa Video Card" icon="mem" image="video" type="isa"/>
+    <card id="v02" label="Unknown China AGP" icon="mem" image="video" type="agp"/>
+    <card id="v03" label="ATI Radeon 9800"   icon="mem" image="video" type="agp8x"/>
+  </video>
+  <jumpers>
+    <jumperset>
+  	  <jumper id="jbf0_12" image="bf0_12_image" area="bf0_12_area"/>
+  	  <jumper id="jbf0_23" image="bf0_23_image" area="bf0_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jbf1_12" image="bf1_12_image" area="bf1_12_area"/>
+  	  <jumper id="jbf1_23" image="bf1_23_image" area="bf1_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jbf2_12" image="bf2_12_image" area="bf2_12_area"/>
+  	  <jumper id="jbf2_23" image="bf2_23_image" area="bf2_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jfs0_12" image="fs0_12_image" area="fs0_12_area"/>
+  	  <jumper id="jfs0_23" image="fs0_23_image" area="fs0_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jfs1_12" image="fs1_12_image" area="fs1_12_area"/>
+  	  <jumper id="jfs1_23" image="fs1_23_image" area="fs1_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jfs2_12" image="fs2_12_image" area="fs2_12_area"/>
+  	  <jumper id="jfs2_23" image="fs2_23_image" area="fs2_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jfs3_12" image="fs3_12_image" area="fs3_12_area"/>
+  	  <jumper id="jfs3_23" image="fs3_23_image" area="fs3_23_area"/>
+    </jumperset>
+
+    <jumperset>
+  	  <jumper id="jvid0_12" image="vid0_12_image" area="vid0_12_area"/>
+  	  <jumper id="jvid0_23" image="vid0_23_image" area="vid0_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jvid1_12" image="vid1_12_image" area="vid1_12_area"/>
+  	  <jumper id="jvid1_23" image="vid1_23_image" area="vid1_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jvid2_12" image="vid2_12_image" area="vid2_12_area"/>
+  	  <jumper id="jvid2_23" image="vid2_23_image" area="vid2_23_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="jvid3_12" image="vid3_12_image" area="vid3_12_area"/>
+  	  <jumper id="jvid3_23" image="vid3_23_image" area="vid3_23_area"/>
+    </jumperset>
+
+  </jumpers>
+  <areas>
+    <area description="Processor socket" name="proc" type="proc">
+      <link id="p01" image="img_p01"/>
+      <link id="p02" image="img_p02"/>
+      <link id="p03" image="img_p03"/>
+      <link id="p04" image="img_p04"/>
+	</area>
+    <area description="Dimm socket 1" name="dimm1" type="dimm">
+      <link id="m02" image="img_m01"/>
+    </area>
+    <area description="Dimm socket 2" name="dimm2" type="dimm">
+      <link id="m02" image="img_m02"/>
+    </area>
+    <area description="Isa slot 1" name="isa" type="isa">
+      <link id="v01" image="img_v01"/>
+    </area>
+    <area description="AGP slot" name="agp" type="agp">
+      <link id="v02" image="img_v02"/>
+    </area>
+
+  </areas>
+</mb>

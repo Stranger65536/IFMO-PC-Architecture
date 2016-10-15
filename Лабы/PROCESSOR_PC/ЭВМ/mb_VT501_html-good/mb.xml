@@ -1,0 +1,95 @@
+<mb title="FIC VT-501" file="asusp2_99.swf" libfile="imglib.swf" help="VT-501A0_Ch2.pdf">
+  <processors>
+    <processor id="p01" label="AMD 5k 86" icon="amd" image="amd5k86"  type="proc" volt="3.3" range="0.1">
+        75;90;90;-;
+        +;+;+;75;
+        +;+;+;75;
+        75;90;90;-
+    </processor>
+    <processor id="p02" label="Pentium I MMX" icon="intel" image="p1mmx"  type="proc" volt="2.9" range="0.3">
+        150;166;180;200;
+        125;133;150;166;
+        125;133;150;166;
+        150;166;180;200
+	</processor>
+	<processor id="p03" label="IBM" icon="proc" image="ibm"  type="proc" volt="3.3" range="0.2">
+        150;-;-;-;
+        100;-;120;133;
+        100;110;120;133;
+        150;-;-;-
+	</processor>
+	<processor id="p04" label="Cyrix MI" icon="proc" image="cyrix"  type="proc" volt="3.3" range="0.2">
+        150;150;180;-;
+        100;110;120;133;
+        50;50;60;66;
+        -;-;-;-
+	</processor>
+  </processors>
+  <memory>
+    <module id="m01" label="Kingston 128 Mb SIMM" icon="mem"   image="memory" type="simm" size="128"/>
+    <module id="m02" label="NoName 256 Mb DIMM"   icon="mem"   image="memory" type="dimm" size="256"/>
+  </memory>
+  <video>
+    <card id="v01" label="Unknown Isa Video Card" icon="mem" image="video" type="isa"/>
+    <card id="v02" label="Unknown China AGP" icon="mem" image="video" type="agp"/>
+    <card id="v03" label="ATI Radeon 9800"   icon="mem" image="video" type="agp8x"/>
+  </video>
+  <jumpers>
+    <jumperset>
+  	  <jumper id="j01" image="j01_image" area="j01_area"/>
+  	  <jumper id="j02" image="j02_image" area="j02_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="j12" image="j12_image" area="j12_area"/>
+  	  <jumper id="j13" image="j13_image" area="j13_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="j14" image="j14_image" area="j14_area"/>
+  	  <jumper id="j15" image="j15_image" area="j15_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="j16" image="j16_image" area="j16_area"/>
+  	  <jumper id="j17" image="j17_image" area="j17_area"/>
+    </jumperset>
+    <jumperset>
+  	  <jumper id="j18" image="j18_image" area="j18_area"/>
+  	  <jumper id="j19" image="j19_image" area="j19_area"/>
+    </jumperset>
+
+    <jumper id="j03" image="j03_image" area="j03_area"/>
+    <jumper id="j04" image="j04_image" area="j04_area"/>
+    <jumper id="j05" image="j05_image" area="j05_area"/>
+    <jumper id="j06" image="j06_image" area="j06_area"/>
+    <jumper id="j07" image="j07_image" area="j07_area"/>
+    <jumper id="j08" image="j08_image" area="j08_area"/>
+    <jumper id="j09" image="j09_image" area="j09_area"/>
+    <jumper id="j10" image="j10_image" area="j10_area"/>
+    <jumper id="j11" image="j11_image" area="j11_area"/>
+  </jumpers>
+  <areas>
+    <area description="Processor socket" name="proc" type="proc">
+      <link id="p01" image="img_p01"/>
+      <link id="p02" image="img_p02"/>
+      <link id="p03" image="img_p03"/>
+      <link id="p04" image="img_p04"/>
+    </area>
+    <area description="Simm socket 1" name="simm1" type="simm">
+      <link id="m01" image="img_m01_1"/>
+    </area>
+    <area description="Simm socket 2" name="simm2" type="simm">
+      <link id="m01" image="img_m01_2"/>
+    </area>
+    <area description="Dimm socket" name="dimm" type="dimm">
+      <link id="m02" image="img_m02"/>
+    </area>
+    <area description="Isa slot 1" name="isa1" type="isa">
+      <link id="v01" image="img_v01"/>
+    </area>
+    <area description="North bridge" name="north" type="hint"/>
+    <area description="South bridge" name="south" type="hint"/>
+    <area description="Primary IDE" name="priIde" type="hint"/>
+    <area description="Secondary IDE" name="secIde" type="hint"/>
+    <area description="Floppy disk" name="fdc" type="hint"/>
+
+  </areas>
+</mb>

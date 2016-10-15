@@ -1,0 +1,13 @@
+﻿<flash_project name="mb" version="1">
+    <project_file path="./_mbViewer.fla" filetype="fla" profile="" def_file="true" />
+    <project_file path="./mb.xml" filetype="xml" />
+    <project_file path="./onpress.as" filetype="as" />
+    <project_file path="./comments.txt" filetype="txt" />
+    <project_file path="./imglib.fla" filetype="fla" profile="" />
+    <project_file path="./asusp2_99.fla" filetype="fla" profile="" />
+    <project_file path="./activearea.as" filetype="as" />
+    <project_file path="./stubImage.as" filetype="as" />
+    <project_file path="./parseareas.as" filetype="as" />
+    <project_file path="./parsejumpers.as" filetype="as" />
+    <project_file path="./powerOn.as" filetype="as" />
+</flash_project>
